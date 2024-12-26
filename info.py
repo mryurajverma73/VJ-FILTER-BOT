@@ -112,10 +112,10 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
 
 # Token Verification Info :
-VERIFY = bool(environ.get('VERIFY', False))
-VERIFY_SHORTLINK_URL = environ.get('VERIFY_SHORTLINK_URL', 'Movie Ke Liye Premium lena Zaruri Hai Admin @itzofficialverma Se Bat Kro Ya Premium Buy Kro')
-VERIFY_SHORTLINK_API = environ.get('VERIFY_SHORTLINK_API', '')
-VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', '')
+VERIFY = bool(environ.get('VERIFY', True))
+VERIFY_SHORTLINK_URL = environ.get('VERIFY_SHORTLINK_URL', 'runurl.in')
+VERIFY_SHORTLINK_API = environ.get('VERIFY_SHORTLINK_API', 'c1a8aba9e132916bf5ea0574aecb27ab34b50bc1')
+VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', 'https://t.me/How_to_openlink012/2')
 
 # If You Fill Second Shortner Then Bot Attach Both First And Second Shortner And Use It For Verify.
 VERIFY_SECOND_SHORTNER = bool(environ.get('VERIFY_SECOND_SHORTNER', False))
