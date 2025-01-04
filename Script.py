@@ -221,7 +221,7 @@ Nᴀᴍᴇ - {}"""
 
     MELCOW_ENG = """<b>Hᴇʟʟᴏ {} 😍, Aɴᴅ Wᴇʟᴄᴏᴍᴇ Tᴏ {} My Universe ❤️</b>"""
 
-    SHORTLINK_INFO = """https://t.me/+OHjrcgklmlBjZTM1"""
+    SHORTLINK_INFO = """
 
 🫵 Select Your Language And Earn Money 💰"""
 
