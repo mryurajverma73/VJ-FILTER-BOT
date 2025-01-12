@@ -13,7 +13,7 @@ id_pattern = re.compile(r'^.\d+$')
 SESSION = environ.get('SESSION', 'MohitBot')
 API_ID = int(environ.get('API_ID', '27547358'))
 API_HASH = environ.get('API_HASH', '675a9c08fc93de993ae6aff91d25bf29')
-BOT_TOKEN = environ.get('BOT_TOKEN', "")
+BOT_TOKEN = environ.get('BOT_TOKEN', "7610338667:AAHDvXvEpM558xn4v96KEhsxLotHzIxfNeo")
 
 
 # This Pictures Is For Start Message Picture, You Can Add Multiple By Giving One Space Between Each.
