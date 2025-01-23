@@ -92,7 +92,7 @@ GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+OHjrcgklmlBjZTM1')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+OHjrcgklmlBjZTM1')
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '+vEXW5lfSc3k4YmM1') # Support Chat Link Without https:// or @
 OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/itzOfficialVerma')
-CHAT_LINK = environ.get('CHAT_LINK', 'https://t.me/+LLxAxjwAiIozYTM1')
+CHAT_GROUP = environ.get('CHAT_GROUP', 'https://t.me/+LLxAxjwAiIozYTM1')
 
 # True Or False
 AI_SPELL_CHECK = bool(environ.get('AI_SPELL_CHECK', True))
