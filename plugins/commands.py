@@ -295,7 +295,8 @@ async def start(client, message):
                 if STREAM_MODE == True:
                     button = [[
                         InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
-                        InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                        InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK),
+                        InlinekeyboardButton('CHAT GROUP', url=CHAT_GRUP)
                     ],[
                         InlineKeyboardButton('𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥', url=OWNER_LNK)
                     ],[
@@ -307,7 +308,8 @@ async def start(client, message):
                 else:
                     button = [[
                         InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
-                        InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                        InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK),
+                        InlinekeyboardButton('CHAT GROUP', url=CHAT_GRUP)
                     ],[
                         InlineKeyboardButton('𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥', url=OWNER_LNK)
                     ]]
@@ -404,7 +406,8 @@ async def start(client, message):
                 if STREAM_MODE == True:
                     button = [[
                         InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
-                        InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                        InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK),
+                        InlinekeyboardButton('CHAT GROUP', url=CHAT_GRUP)
                     ],[
                         InlineKeyboardButton('𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥', url=OWNER_LNK)
                     ],[
@@ -416,7 +419,8 @@ async def start(client, message):
                 else:
                     button = [[
                         InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
-                        InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                        InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK),
+                        InlinekeyboardButton('CHAT GROUP', url=CHAT_GRUP)
                     ],[
                         InlineKeyboardButton('𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥', url=OWNER_LNK)
                     ]]
@@ -546,7 +550,8 @@ async def start(client, message):
                     return
             button = [[
                 InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
-                InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK),
+                InlinekeyboardButton('CHAT GROUP', url=CHAT_GRUP)
             ],[
                 InlineKeyboardButton("𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥", url=OWNER_LNK)
             ]]
