@@ -269,7 +269,7 @@ async def years_cb_handler(client: Client, query: CallbackQuery):
     try:
         if int(query.from_user.id) not in [query.message.reply_to_message.from_user.id, 0]:
             return await query.answer(
-                f"⚠️ ʜᴇʟʟᴏ{query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ,\nʀᴇQᴜᴇꜱᴛ ʏᴏᴜʀ'ꜱ...",
+                f"⚠️ ʜᴇʟʟᴏ{query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ,\nʀᴇQᴜᴇꜱᴛ ʏᴏᴜʀ'ꜱ / ये Movie आपने Search नहीं कि है आप अपनी Search करें...",
                 show_alert=True,
             )
     except:
@@ -332,7 +332,7 @@ async def filter_yearss_cb_handler(client: Client, query: CallbackQuery):
     try:
         if int(req) not in [query.message.reply_to_message.from_user.id, 0]:
             return await query.answer(
-                f"⚠️ ʜᴇʟʟᴏ{query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ,\nʀᴇQᴜᴇꜱᴛ ʏᴏᴜʀ'ꜱ...",
+                f"⚠️ ʜᴇʟʟᴏ{query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ,\nʀᴇQᴜᴇꜱᴛ ʏᴏᴜʀ'ꜱ/ ये Movie आपने Search नहीं कि है आप अपनी Search करें...",
                 show_alert=True,
             )
     except:
@@ -343,7 +343,7 @@ async def filter_yearss_cb_handler(client: Client, query: CallbackQuery):
 
     files, offset, total_results = await get_search_results(chat_id, search, offset=0, filter=True)
     if not files:
-        await query.answer("🚫 𝗡𝗼 𝗙𝗶𝗹𝗲 𝗪𝗲𝗿𝗲 𝗙𝗼𝘂𝗻𝗱 🚫", show_alert=1)
+        await query.answer("🚫 𝗡𝗼 𝗙𝗶𝗹𝗲 𝗪𝗲𝗿𝗲 𝗙𝗼𝘂𝗻𝗱/कोई File नहीं मिली🚫", show_alert=1)
         return
     temp.GETALL[key] = files
     settings = await get_settings(message.chat.id)
@@ -435,7 +435,7 @@ async def episodes_cb_handler(client: Client, query: CallbackQuery):
     try:
         if int(query.from_user.id) not in [query.message.reply_to_message.from_user.id, 0]:
             return await query.answer(
-                f"⚠️ ʜᴇʟʟᴏ{query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ,\nʀᴇQᴜᴇꜱᴛ ʏᴏᴜʀ'ꜱ...",
+                f"⚠️ ʜᴇʟʟᴏ{query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ,\nʀᴇQᴜᴇꜱᴛ ʏᴏᴜʀ'ꜱ/ ये Movie आपने Search नहीं कि है आप अपनी Search करें ...",
                 show_alert=True,
             )
     except:
@@ -498,7 +498,7 @@ async def filter_episodes_cb_handler(client: Client, query: CallbackQuery):
     try:
         if int(req) not in [query.message.reply_to_message.from_user.id, 0]:
             return await query.answer(
-                f"⚠️ ʜᴇʟʟᴏ{query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ,\nʀᴇQᴜᴇꜱᴛ ʏᴏᴜʀ'ꜱ...",
+                f"⚠️ ʜᴇʟʟᴏ{query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ,\nʀᴇQᴜᴇꜱᴛ ʏᴏᴜʀ'ꜱ / ये Movie आपने Search नहीं कि है आप अपनी Search करें...",
                 show_alert=True,
             )
     except:
@@ -509,7 +509,7 @@ async def filter_episodes_cb_handler(client: Client, query: CallbackQuery):
 
     files, offset, total_results = await get_search_results(chat_id, search, offset=0, filter=True)
     if not files:
-        await query.answer("🚫 𝗡𝗼 𝗙𝗶𝗹𝗲 𝗪𝗲𝗿𝗲 𝗙𝗼𝘂𝗻𝗱 🚫", show_alert=1)
+        await query.answer("🚫 𝗡𝗼 𝗙𝗶𝗹𝗲 𝗪𝗲𝗿𝗲 𝗙𝗼𝘂𝗻𝗱/ कोई file नहीं मिली 🚫", show_alert=1)
         return
     temp.GETALL[key] = files
     settings = await get_settings(message.chat.id)
@@ -603,7 +603,7 @@ async def languages_cb_handler(client: Client, query: CallbackQuery):
     try:
         if int(query.from_user.id) not in [query.message.reply_to_message.from_user.id, 0]:
             return await query.answer(
-                f"⚠️ ʜᴇʟʟᴏ{query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ,\nʀᴇQᴜᴇꜱᴛ ʏᴏᴜʀ'ꜱ...",
+                f"⚠️ ʜᴇʟʟᴏ{query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ,\nʀᴇQᴜᴇꜱᴛ ʏᴏᴜʀ'ꜱ/ ये Movie आपने Search नहीं कि है आप अपनी Search करें...",
                 show_alert=True,
             )
     except:
@@ -631,7 +631,7 @@ async def languages_cb_handler(client: Client, query: CallbackQuery):
         0,
         [
             InlineKeyboardButton(
-                text="👇 𝖲𝖾𝗅𝖾𝖼𝗍 𝖸𝗈𝗎𝗋 𝖫𝖺𝗇𝗀𝗎𝖺𝗀𝖾𝗌 👇", callback_data="ident"
+                text="👇 𝖲𝖾𝗅𝖾𝖼𝗍 𝖸𝗈𝗎𝗋 𝖫𝖺𝗇𝗀𝗎𝖺𝗀𝖾𝗌/अपनी भाषा चुने 👇", callback_data="ident"
             )
         ],
     )
@@ -666,7 +666,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
     try:
         if int(req) not in [query.message.reply_to_message.from_user.id, 0]:
             return await query.answer(
-                f"⚠️ ʜᴇʟʟᴏ{query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ,\nʀᴇQᴜᴇꜱᴛ ʏᴏᴜʀ'ꜱ...",
+                f"⚠️ ʜᴇʟʟᴏ{query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ,\nʀᴇQᴜᴇꜱᴛ ʏᴏᴜʀ'ꜱ/ ये Movie आपने Search नहीं कि है आप अपनी Search करें...",
                 show_alert=True,
             )
     except:
@@ -677,7 +677,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
 
     files, offset, total_results = await get_search_results(chat_id, search, offset=0, filter=True)
     if not files:
-        await query.answer("🚫 𝗡𝗼 𝗙𝗶𝗹𝗲 𝗪𝗲𝗿𝗲 𝗙𝗼𝘂𝗻𝗱 🚫", show_alert=1)
+        await query.answer("🚫 𝗡𝗼 𝗙𝗶𝗹𝗲 𝗪𝗲𝗿𝗲 𝗙𝗼𝘂𝗻𝗱/कोई file नहीं मिली🚫", show_alert=1)
         return
     temp.GETALL[key] = files
     settings = await get_settings(message.chat.id)
@@ -769,7 +769,7 @@ async def seasons_cb_handler(client: Client, query: CallbackQuery):
     try:
         if int(query.from_user.id) not in [query.message.reply_to_message.from_user.id, 0]:
             return await query.answer(
-                f"⚠️ ʜᴇʟʟᴏ{query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ,\nʀᴇQᴜᴇꜱᴛ ʏᴏᴜʀ'ꜱ...",
+                f"⚠️ ʜᴇʟʟᴏ{query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ,\nʀᴇQᴜᴇꜱᴛ ʏᴏᴜʀ'ꜱ/ ये Movie आपने Search नहीं कि है आप अपनी Search करें...",
                 show_alert=True,
             )
     except:
@@ -799,7 +799,7 @@ async def seasons_cb_handler(client: Client, query: CallbackQuery):
         0,
         [
             InlineKeyboardButton(
-                text="👇 𝖲𝖾𝗅𝖾𝖼𝗍 Season 👇", callback_data="ident"
+                text="👇 𝖲𝖾𝗅𝖾𝖼𝗍 Season/ Season चुने 👇", callback_data="ident"
             )
         ],
     )
@@ -840,7 +840,7 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
     try:
         if int(req) not in [query.message.reply_to_message.from_user.id, 0]:
             return await query.answer(
-                f"⚠️ ʜᴇʟʟᴏ{query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ,\nʀᴇQᴜᴇꜱᴛ ʏᴏᴜʀ'ꜱ...",
+                f"⚠️ ʜᴇʟʟᴏ{query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ,\nʀᴇQᴜᴇꜱᴛ ʏᴏᴜʀ'ꜱ/ ये Movie आपने Search नहीं कि है आप अपनी Search करें...",
                 show_alert=True,
             )
     except:
@@ -874,7 +874,7 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
         files.extend(files2)
         
     if not files:
-        await query.answer("🚫 𝗡𝗼 𝗙𝗶𝗹𝗲 𝗪𝗲𝗿𝗲 𝗙𝗼𝘂𝗻𝗱 🚫", show_alert=1)
+        await query.answer("🚫 𝗡𝗼 𝗙𝗶𝗹𝗲 𝗪𝗲𝗿𝗲 𝗙𝗼𝘂𝗻𝗱/ कोई File नहीं मिली🚫", show_alert=1)
         return
     temp.GETALL[key] = files
     settings = await get_settings(message.chat.id)
@@ -941,7 +941,7 @@ async def qualities_cb_handler(client: Client, query: CallbackQuery):
     try:
         if int(query.from_user.id) not in [query.message.reply_to_message.from_user.id, 0]:
             return await query.answer(
-                f"⚠️ ʜᴇʟʟᴏ{query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ,\nʀᴇQᴜᴇꜱᴛ ʏᴏᴜʀ'ꜱ...",
+                f"⚠️ ʜᴇʟʟᴏ{query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ,\nʀᴇQᴜᴇꜱᴛ ʏᴏᴜʀ'ꜱ/ ये Movie आपने Search नहीं कि है आप अपनी Search करें...",
                 show_alert=False,
             )
     except:
@@ -999,7 +999,7 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
     try:
         if int(req) not in [query.message.reply_to_message.from_user.id, 0]:
             return await query.answer(
-                f"⚠️ ʜᴇʟʟᴏ{query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ,\nʀᴇQᴜᴇꜱᴛ ʏᴏᴜʀ'ꜱ...",
+                f"⚠️ ʜᴇʟʟᴏ{query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ,\nʀᴇQᴜᴇꜱᴛ ʏᴏᴜʀ'ꜱ/ ये Movie आपने Search नहीं कि है आप अपनी Search करें...",
                 show_alert=False,
             )
     except:
@@ -1012,7 +1012,7 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
     files, offset, total_results = await get_search_results(chat_id, search, offset=0, filter=True)
     # files = [file for file in files if re.search(lang, file["file_name"], re.IGNORECASE)]
     if not files:
-        await query.answer("🚫 𝗡𝗼 𝗙𝗶𝗹𝗲 𝗪𝗲𝗿𝗲 𝗙𝗼𝘂𝗻𝗱 🚫", show_alert=1)
+        await query.answer("🚫 𝗡𝗼 𝗙𝗶𝗹𝗲 𝗪𝗲𝗿𝗲 𝗙𝗼𝘂𝗻𝗱/ कोई file नहीं मिली 🚫", show_alert=1)
         return
     temp.GETALL[key] = files
     settings = await get_settings(message.chat.id)
@@ -1071,7 +1071,7 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
             )
     else:
         btn.append(
-            [InlineKeyboardButton(text="😶 ɴᴏ ᴍᴏʀᴇ ᴘᴀɢᴇꜱ ᴀᴠᴀɪʟᴀʙʟᴇ 😶",callback_data="pages")]
+            [InlineKeyboardButton(text="😶 ɴᴏ ᴍᴏʀᴇ ᴘᴀɢᴇꜱ ᴀᴠᴀɪʟᴀʙʟᴇ/ और Page नहीं हैं 😶",callback_data="pages")]
         )
     if lang != "homepage":
         req = query.from_user.id
@@ -2190,9 +2190,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "shortlink_info":
         btn = [[
-            InlineKeyboardButton("👇Select Your Language 👇", callback_data="laninfo")
+            InlineKeyboardButton("👇Select Your Language/अपनी भाषा चुने👇", callback_data="laninfo")
         ],[
-            InlineKeyboardButton("Tamil", callback_data="tamil_info"),
+            InlineKeyboardButton("Punjabi", callback_data="punjabi_info"),
             InlineKeyboardButton("English", callback_data="english_info"),
             InlineKeyboardButton("Hindi", callback_data="hindi_info")
         ],[
@@ -2343,7 +2343,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         reply_markup = InlineKeyboardMarkup(btn)
         await query.message.edit_text(
-            text=(script.TAMIL_INFO),
+            text=(script.PUNJABI_INFO),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
@@ -2581,7 +2581,7 @@ async def auto_filter(client, name, msg, reply_msg, ai_search, spoll=False):
                 if settings["spell_check"]:
                     return await advantage_spell_chok(client, name, msg, reply_msg, ai_search)
                 else:
-                    return await reply_msg.edit_text(f"**⚠️ No File Found For Your Query - {name}**\n**Make Sure Spelling Is Correct.**")
+                    return await reply_msg.edit_text(f"**⚠️ No File Found For Your Query /ऐसी कोई फाइल नहीं मिली- {name}**\n**Make Sure Spelling Is Correct.**")
         else:
             return
     else:
@@ -2688,15 +2688,15 @@ async def auto_filter(client, name, msg, reply_msg, ai_search, spoll=False):
         )
         temp.IMDB_CAP[message.from_user.id] = cap
         if not settings["button"]:
-            cap+="<b>\n\n<u>🍿 Your Movie Files 👇</u></b>\n"
+            cap+="<b>\n\n<u>🍿 Your Movie Files / आपकी Movie File 👇</u></b>\n"
             for file in files:
                 cap += f"<b>\n📁 <a href='https://telegram.me/{temp.U_NAME}?start=files_{file['file_id']}'>[{get_size(file['file_size'])}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file['file_name'].split()))}\n</a></b>"
     else:
         if settings["button"]:
-            cap = f"<b>Tʜᴇ Rᴇꜱᴜʟᴛꜱ Fᴏʀ ☞ {search}\n\nRᴇǫᴜᴇsᴛᴇᴅ Bʏ ☞ {message.from_user.mention}\n\nʀᴇsᴜʟᴛ sʜᴏᴡ ɪɴ ☞ {remaining_seconds} sᴇᴄᴏɴᴅs\n\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ☞ : {message.chat.title} \n\n⚠️ ᴀꜰᴛᴇʀ 5 ᴍɪɴᴜᴛᴇꜱ ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴅᴇʟᴇᴛᴇᴅ 🗑️\n\n</b>"
+            cap = f"<b>Tʜᴇ Rᴇꜱᴜʟᴛꜱ Fᴏʀ ☞ {search}\n\nRᴇǫᴜᴇsᴛᴇᴅ Bʏ ☞ {message.from_user.mention}\n\nʀᴇsᴜʟᴛ sʜᴏᴡ ɪɴ ☞ {remaining_seconds} sᴇᴄᴏɴᴅs\n\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ☞ : {message.chat.title} \n\n⚠️ ᴀꜰᴛᴇʀ 5 ᴍɪɴᴜᴛᴇꜱ ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴅᴇʟᴇᴛᴇᴅ / 5 मिनिट में ये मैसेज अपने आप Delete हो जायेगा🗑️\n\n</b>"
         else:
-            cap = f"<b>Tʜᴇ Rᴇꜱᴜʟᴛꜱ Fᴏʀ ☞ {search}\n\nRᴇǫᴜᴇsᴛᴇᴅ Bʏ ☞ {message.from_user.mention}\n\nʀᴇsᴜʟᴛ sʜᴏᴡ ɪɴ ☞ {remaining_seconds} sᴇᴄᴏɴᴅs\n\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ☞ : {message.chat.title} \n\n⚠️ ᴀꜰᴛᴇʀ 5 ᴍɪɴᴜᴛᴇꜱ ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴅᴇʟᴇᴛᴇᴅ 🗑️\n\n</b>"
-            cap+="<b><u>🍿 Your Movie Files 👇</u></b>\n\n"
+            cap = f"<b>Tʜᴇ Rᴇꜱᴜʟᴛꜱ Fᴏʀ ☞ {search}\n\nRᴇǫᴜᴇsᴛᴇᴅ Bʏ ☞ {message.from_user.mention}\n\nʀᴇsᴜʟᴛ sʜᴏᴡ ɪɴ ☞ {remaining_seconds} sᴇᴄᴏɴᴅs\n\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ☞ : {message.chat.title} \n\n⚠️ ᴀꜰᴛᴇʀ 5 ᴍɪɴᴜᴛᴇꜱ ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴅᴇʟᴇᴛᴇᴅ / 5 मिनिट में ये मैसेज अपने आप Delete हो जाएगा🗑️\n\n</b>"
+            cap+="<b><u>🍿 Your Movie Files / आपकी Movie File👇</u></b>\n\n"
             for file in files:
                 cap += f"<b>📁 <a href='https://telegram.me/{temp.U_NAME}?start=files_{file['file_id']}'>[{get_size(file['file_size'])}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file['file_name'].split()))}\n\n</a></b>"
 
