@@ -28,12 +28,13 @@ async def start(client, message):
         pass
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[
-            InlineKeyboardButton('👻 Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ '👻', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('👻 Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ 👻', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ],[
             InlineKeyboardButton('🧐 Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ 🧐', url=f'https://t.me/{SUPPORT_CHAT}'),
             InlineKeyboardButton('🍿 Mᴏᴠɪᴇ Gʀᴏᴜᴘ 🍿', url=GRP_LNK)
         ],[
-            InlineKeyboardButton('😉 Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ 😉 ✇', url=CHNL_LNK)
+            InlineKeyboardButton('😉 Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ 😉 ', url=CHNL_LNK),
+            InlineKeyboardButton('😇 Bot Owner 😇', url=OWNER_LNK)
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup, disable_web_page_preview=True)
@@ -57,7 +58,7 @@ async def start(client, message):
                 InlineKeyboardButton('⚔️ Hᴇʟᴘ ⚔️', callback_data='help'),
                 InlineKeyboardButton('😃 Aʙᴏᴜᴛ 😃', callback_data='about')
             ],[
-                InlineKeyboardButton('😇 Bot Owner 😇', url=OWNER_LNK)
+                InlineKeyboardButton('😇 Bot Owner 😇', url=OWNER_LNK),
                 InlineKeyboardButton('💳 Gᴇᴛ Pᴀɪᴅ Sᴜʙsᴄʀɪᴘᴛɪᴏɴ 💳', callback_data='subscription')
             ]]
         else:
@@ -200,9 +201,8 @@ async def start(client, message):
                     InlineKeyboardButton('⚔️ Hᴇʟᴘ ⚔️', callback_data='help'),
                     InlineKeyboardButton('😃 Aʙᴏᴜᴛ 😃', callback_data='about')
                 ],[
+                    InlineKeyboardButton('😇 Bot Owner 😇', url=OWNER_LNK) ,
                     InlineKeyboardButton('💳 Gᴇᴛ Pᴀɪᴅ Sᴜʙsᴄʀɪᴘᴛɪᴏɴ 💳', callback_data='subscription')
-                ],[
-                    InlineKeyboardButton('😇 Bot Owner 😇', url=OWNER_LNK) 
                 ]]
             else:
                 buttons = [[
@@ -210,7 +210,7 @@ async def start(client, message):
                 ],[
                     InlineKeyboardButton('😉 Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ 😉', url=CHNL_LNK),
                     InlineKeyboardButton('🍿 Mᴏᴠɪᴇ Gʀᴏᴜᴘ 🍿', url=GRP_LNK)
-                ],[
+                ],,
                     InlineKeyboardButton('⚔️ Hᴇʟᴘ⚔️', callback_data='help'),
                     InlineKeyboardButton('😃 Aʙᴏᴜᴛ 😃', callback_data='about')
                 ],[
