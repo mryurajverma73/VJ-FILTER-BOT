@@ -146,9 +146,7 @@ async def start(client, message):
                 InlineKeyboardButton('😃 Aʙᴏᴜᴛ 😃', callback_data='about')
             ],[
                 InlineKeyboardButton('😇 Bot Owner 😇', url=OWNER_LNK),
-                InlineKeyboardButton('💳 Gᴇᴛ Pᴀɪᴅ Sᴜʙsᴄʀɪᴘᴛɪᴏɴ 💳', callback_data='subscription')
-            ],[
-                
+                InlineKeyboardButton('💳 Gᴇᴛ Pᴀɪᴅ Sᴜʙsᴄʀɪᴘᴛɪᴏɴ 💳', callback_data='subscription'   
             ]]
         else:
             buttons = [[
