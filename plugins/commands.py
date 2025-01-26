@@ -557,10 +557,10 @@ async def start(client, message):
                     )
                     return
             button = [[
-                InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
-                InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                InlineKeyboardButton('😇Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ😇', url=f'https://t.me/{SUPPORT_CHAT}'),
+                InlineKeyboardButton('😉Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ😉', url=CHNL_LNK)
             ],[
-                InlineKeyboardButton("𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥", url=OWNER_LNK)
+                InlineKeyboardButton("🥳𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥🥳", url=OWNER_LNK)
             ]]
             if STREAM_MODE == True:
                 button.append([InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}')])
