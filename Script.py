@@ -3,9 +3,10 @@
 # Ask Doubt on telegram @KingVJ01
 
 class script(object):
-    START_TXT = """<b><blockquote>ʜᴇʟʟᴏ {}, ᴍʏ ɴᴀᴍᴇ <a href=https://t.me/@DangerousMyBot{}>{}</a></blockquote>
+    START_TXT = """<b><blockquote>Hᴇʟʟᴏ {}, Mʏ Nᴀᴍᴇ <a href=https://t.me/@DangerousMyBot{}>{}</a></blockquote>
     
-ɪ ᴀᴍ【 ʟᴀᴛᴇꜱᴛ ᴀᴅᴠᴀɴᴄᴇᴅ 】ᴀɴᴅ ᴘᴏᴡᴇʀꜰᴜʟ Movie & Web Series  ꜰɪʟᴛᴇʀ ʙᴏᴛ + └ᴀᴡᴇꜱᴏᴍᴇ ꜰɪʟᴛᴇʀ┘ + ├ꜰɪʟᴇ ꜱᴛᴏʀᴇ ʙᴏᴛ┤ + ☞ᴍᴀɴᴜᴀʟ ꜰɪᴛᴇʀ☜ ᴀɴᴅ ᢵᴄᴜꜱᴛᴏᴍɪᴢᴇᴅ ꜱʜᴏʀᴛɴᴇʀ ꜱᴜᴘᴘᴏʀᴛᢴ ᢾᴀɴᴅ ʙᴇꜱᴛ ᴜɪ ᴘᴇʀꜰᴏʀᴍᴀɴᴄᴇᢿ</b>"""
+ɪ Hᴇʏ Sᴡᴇᴇᴛʜᴇᴀʀᴛ I Aᴍ 😉 | Mᴏsᴛ Pᴏᴡᴇʀғᴜʟ 🤯 & Lᴇᴛᴇsᴛ Aᴅᴠᴀɴᴄᴇ Mᴏᴠɪᴇ 🍿+ Wᴇʙ Sᴇʀɪᴇs +Mᴀɴᴜᴀʟ Fɪʟᴛᴇʀ 🧐 Bᴏᴛ. I Aᴍ Vᴇʀʏ Cᴜsᴛᴏᴍɪᴢᴀʙʟᴇ🤩 Bᴏᴛ.
+Fᴏʟʟᴏᴡ Mʏ Oᴡɴᴇʀ 🥳 @Iᴛᴢᴏғғɪᴄɪᴀʟᴠᴇʀᴍᴀ</b>"""
 
     CLONE_START_TXT = """<b><blockquote>ʜᴇʟʟᴏ {}, ᴍʏ ɴᴀᴍᴇ <a href=https://t.me/{}>{}</a></blockquote>
     
