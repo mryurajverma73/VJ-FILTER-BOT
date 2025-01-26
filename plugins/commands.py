@@ -56,6 +56,9 @@ async def start(client, message):
                 InlineKeyboardButton('🍿 Mᴏᴠɪᴇ Gʀᴏᴜᴘ🍿', url=GRP_LNK)
             ],[
                 InlineKeyboardButton('⚔️ Hᴇʟᴘ⚔️', callback_data='help'),
+                InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}')
+            ],[    
+                InlineKeyboardButton('😇 Bᴏᴛ Oᴡɴᴇʀ 😇', url=OWNER_LNK),
                 InlineKeyboardButton('😃 Aʙᴏᴜᴛ😃', callback_data='about')
             ],[
                 InlineKeyboardButton('💳 Gᴇᴛ Fʀᴇᴇ Oʀ Pᴀɪᴅ Sᴜʙsᴄʀɪᴘᴛɪᴏɴ 💳', callback_data='subscription')
