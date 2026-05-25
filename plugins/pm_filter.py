@@ -122,7 +122,7 @@ async def next_page(bot, query):
 
         btn.insert(0, 
             [
-                InlineKeyboardButton('🎞 𝙌𝙪𝙖𝙡𝙞𝙩𝙮', callback_data=f"qualities#{key}"),
+                InlineKeyboardButton("🎞 𝙌𝙪𝙖𝙡𝙞𝙩𝙮", callback_data=f"qualities#{key}"),
                 InlineKeyboardButton("📺 𝙀𝙥𝙞𝙨𝙤𝙙𝙚𝙨", callback_data=f"episodes#{key}"),
                 InlineKeyboardButton("🗂 𝙎𝙚𝙖𝙨𝙤𝙣𝙨",  callback_data=f"seasons#{key}")
             ]
@@ -137,7 +137,7 @@ async def next_page(bot, query):
         btn = []
         btn.insert(0, 
             [
-                InlineKeyboardButton(''🎞 𝙌𝙪𝙖𝙡𝙞𝙩𝙮', callback_data=f"qualities#{key}"),
+                InlineKeyboardButton("🎞 𝙌𝙪𝙖𝙡𝙞𝙩𝙮", callback_data=f"qualities#{key}"),
                 InlineKeyboardButton("📺 𝙀𝙥𝙞𝙨𝙤𝙙𝙚𝙨", callback_data=f"episodes#{key}"),
                 InlineKeyboardButton("🗂 𝙎𝙚𝙖𝙨𝙤𝙣𝙨",  callback_data=f"seasons#{key}")
             ]
